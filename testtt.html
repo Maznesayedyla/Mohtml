@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+  <title>Hello, World!</title>
+  <style>
+  body{
+    background-color:red;
+    
+  }
+  input{
+    background-color:black;
+    color:red;
+    width:200px;
+    bolder:8px;
+    border-radius:8px;
+    height:35px;
+    
+  }
+  .div2{
+    background-color:#FFFFFFFF;
+    border-radius:40px;
+    border:40px;
+  }
+  
+  
+ 
+  
+  
+  </style>
+  
+</head>
+<body dir="rtl">
+  <feildset>
+    <center>
+    <div class="div2">
+    <form>
+      <br>
+      <h1>تسجيل الدخول</h1>
+      <br><input type="text" class="code" id="codeInput" placeholder="كود التفعيل" required>
+      <br>
+      <br>
+      
+      <input type="submit" value="تأكيد" onclick="verifyCode(); return false;">
+      <br>
+      <br> 
+      <hr>
+      <a href="https://t.me/QRFoK"> نسيت الباسورد</a>
+      </div> 
+    </form>
+      
+        
+    
+  </feildset>
+    <script>
+            const correctCode = "123456789"; 
+        function verifyCode() {
+            const userCode = document.getElementById("codeInput").value;
+
+            if (userCode === correctCode) {
+                alert("الكود صحيح! سيتم تحويلك الآن.");
+                window.location.href = "https://requestly.tech/api/mockv2/wall.html?teamId=Xx2dMLSBaob9oasGrCFG"; // الرابط المطلوب
+            } else {
+                alert("الكود غير صحيح. حاول مرة أخري.");
+            }
+        }
+  
+       
+      
+     
+    
+    
+    
+    
+    </script>
+</body>
+</html>
